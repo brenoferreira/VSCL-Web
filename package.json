@@ -1,0 +1,9 @@
+{
+  "name": "VS2012-CommunityLaunch-Web",
+  "description": "Visual Studio 2012 Community Launch Rio",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  }
+}
