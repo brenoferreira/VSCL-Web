@@ -7,7 +7,21 @@ var EventApi = function (app) {
 
 EventApi.prototype.start = function() {
     this.app.get('/api/event', function(req, resp){
-        resp.send(event);
+        resp.send(
+            [
+                {
+                    link:{
+                        rel: 'talks',
+                        href: '/api/event/talks'
+                    }
+                },
+                {
+                    link: {
+                        rel: 'speakers',
+                        href: '/api/event/speakers'
+                    }
+                }
+            ]);
     });
 
     this.app.get('/api/event/talks', function(req, resp){
