@@ -1,9 +1,13 @@
 var express = require('express');
+var EventApi = require('./api/EventApi');
 var app = express();
 
-app.get('/', function (request, response) {
-    response.send('hello world');
+app.get('/', function (req, resp) {
+    resp.send('hello world');
 });
+
+var api = new EventApi(app);
+api.start()
 
 port = process.env.PORT || 8080;
 app.listen(port);

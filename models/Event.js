@@ -49,14 +49,6 @@ var Event = {
 
         new Talk({
             id: 4,
-            title: 'Almoço',
-            description: '-------------------',
-            start: '13:00',
-            end: '14:30'
-        }),
-
-        new Talk({
-            id: 5,
             title: 'RESTful WebAPIs com ASP.NET WebAPI',
             description: 'Como criar APIs RESTful utilizando o novo ASP.NET WebAPI.',
             start: '14:30',
@@ -70,7 +62,7 @@ var Event = {
         }),
 
         new Talk({
-            id: 6,
+            id: 5,
             title: 'Todo o poder do Windows Azure',
             description: 'Conheça a plataforma de Cloud Computing da Microsoft, o Windows Azure, e veja todas as novas possibilidades de aplicações hospedadas na nuvem',
             start: '15:30',
@@ -84,7 +76,7 @@ var Event = {
         }),
 
         new Talk({
-            id: 7,
+            id: 6,
             title: 'TBD',
             description: 'TBD',
             start: '16:30',
