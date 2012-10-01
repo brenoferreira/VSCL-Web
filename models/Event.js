@@ -1,8 +1,6 @@
 var Speaker = require('./Speaker');
 var Talk = require('./Talk');
 
-console.log(Talk);
-
 var Event = {
     Talks: [
         new Talk({

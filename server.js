@@ -2,8 +2,10 @@ var express = require('express');
 var EventApi = require('./api/EventApi');
 var app = express();
 
+//app.engine('jade', require('jade').__express);
+
 app.get('/', function (req, resp) {
-    resp.send('hello world');
+    resp.render('index.jade');
 });
 
 var api = new EventApi(app);
