@@ -2,7 +2,7 @@ var express = require('express');
 var EventApi = require('./api/EventApi');
 var app = express();
 
-//app.engine('jade', require('jade').__express);
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, resp) {
     resp.render('index.jade');
