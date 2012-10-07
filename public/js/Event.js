@@ -47,10 +47,17 @@ var Router = Backbone.Router.extend({
             collection: new Talks(),
             template: $('#talks-template')
         });
+
+        this.speakersView = new CollectionView({
+            el: $('#content'), 
+            collection: new Speakers(),
+            template: $('#speakers-template')
+        });
     },
 
     routes: {
         'palestras': 'renderTalksView',
+        'palestrantes': 'renderSpeakersView',
         'home': 'renderHomeView'
     },
 
@@ -60,6 +67,10 @@ var Router = Backbone.Router.extend({
 
     renderTalksView: function(){
         this.talksView.render();
+    },
+
+    renderSpeakersView: function(){
+        this.speakersView.render();
     }
 });
 

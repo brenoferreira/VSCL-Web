@@ -1,0 +1,23 @@
+<div>
+    <h1>Palestras</h1>
+</div>
+
+<div class="accordion" id="speakersAccordion">
+    {{#data}}
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#speakersAccordion" href="#{{id}}">
+                    {{name}}
+                </a>
+            </div>
+            <div id="{{id}}" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div>
+                        <p>{{profile}}</p>
+                        <span>Twitter: <a href="http://twitter.com/{{twitter}}" target="_blank">{{twitter}}</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/data}}
+</div>
