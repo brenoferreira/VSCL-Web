@@ -1,0 +1,29 @@
+<div>
+    <h1>Palestras</h1>
+</div>
+
+<div class="accordion" id="talksAccordion">
+    {{#data}}
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#talksAccordion" href="#{{id}}">
+                    {{title}}
+                </a>
+            </div>
+            <div id="{{id}}" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div>
+                        <p>{{description}}</p>
+                        <div>Começo: {{start}}</div>
+                        <div>Fim: {{end}}</div>
+                        <div>
+                            <span>
+                                Palestrante: <a href="#palestrantes/{{speaker.id}}">{{speaker.name}}</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/data}}
+</div>
